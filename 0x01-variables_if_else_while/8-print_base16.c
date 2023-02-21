@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+#include <time.h>
+#include <stdlib.h>
 /**
  * main - prints the numbers in base 16
  * Return: Always 0
@@ -17,5 +18,5 @@ int main(void)
 
 	putchar('\n');
 
-	return (o);
+		return (0);
 }
