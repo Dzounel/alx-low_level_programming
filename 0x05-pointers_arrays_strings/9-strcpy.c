@@ -1,21 +1,18 @@
 #include "main.h"
-
+#include <stddef.h>
 /**
  * _strophy - copies the string pointed to by src
- * @dest: destination
- * @src: source
+ * @dest: destination array
+ * @src: source array
  * Return: string
  */
 char *_strophy(char *dest, char *src)
 {
-	int len = 0;
+	int i;
 
-	while (*(src + len) != '\0')
-	{
-		*(dest + len) = *(src + len);
-		len++;
-	}
-
-	*(dest + len) = '\0';
+	if (dest == NULL)
+		return (NULL);
+	for (i = 0 ; src[i] != '\0' ; i++)
+		dest[i] = src[i];
 	return (dest);
 }
